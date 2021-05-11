@@ -74,7 +74,8 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Guihh🧙‍♂️\n' 
             + 'ORG:Dono da Elisabeth;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=557499510904:+55 (74) 9951-0904\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=55 89 8819-4700+
+1 (606) 373-5809\n' 
             + 'END:VCARD'
 
 //_TIC-TAC-TOE By: Resen
@@ -807,11 +808,11 @@ tiringa.sendMessage(from, buf, audio, {mimetype: 'audio/mp4', quoted: mek, ptt: 
 }
 if ((budy === "fdp") || (budy === "Fdp") || (budy === "FDP")) {
 tiringa.updatePresence(from, Presence.composing)
-reply("teu pai")
+reply("se eu fosse filho da puta minha mãe taria com a sua na esquina.")
 }
 if ((budy === "oi bot") || (budy === "Oi bot")) {
 tiringa.updatePresence(from, Presence.composing)
-reply("oi")
+reply("oii")
 }
 if ((budy === "vtnc") || (budy === "Vtnc")) {
 tiringa.updatePresence(from, Presence.composing)
@@ -819,7 +820,7 @@ reply("Tomar no cu é vitamina, como você e suas primas")
 }
 if ((budy === "vsfd") || (budy === "Vsfd")) {
 tiringa.updatePresence(from, Presence.composing)
-reply("Vtnc")
+reply("vai vc chupa rola")
 }
 if ((budy.match("sexo")) || (budy.match("Sexo"))) {
 tiringa.updatePresence(from, Presence.composing)
@@ -827,18 +828,18 @@ reply(`você falou em coito?KKKKKKKKKKKKKKKKKKKKKKKKK`)
 }
 if (budy === "pnc") {
 tiringa.updatePresence(from, Presence.composing)
-reply(`vsfd ${pushname}`)
+reply(`pnc é pato todo pato é viado e olha lá aquele teu rabo todo arrombado fdm ${pushname}`)
 }
-if ((budy === "cleito") || (budy === "Cleito")) {
+if ((budy === " Bom dia") || (budy === "Cleito")) {
 cleitu = fs.readFileSync(`./src/edmi.webp`)
-tiringa.sendMessage(from, cleitu, sticker, {quoted: mek})
+tiringa.sendMessage(from,bom dia, sticker, {quoted: mek})
 }
-if ((budy === "Edmilson") || (budy === "edmilson")) {
-cleitu = fs.readFileSync(`./src/cleito.webp`)
-tiringa.sendMessage(from, cleitu, sticker, {quoted: mek})
+if ((budy === "edmilson") || (budy === "edmilson")) {= fs.readFileSync(`./src/onichan.mp3`)
+tiringa.sendMessage(from, buf, audio, {mimetype: 'audio/mp4', quoted: mek, ptt: true})
+}
 }
 if ((budy.includes('kkkkkkkkkkk')) || (budy.includes('KKKKKKKKKK'))) {
-reply('Qual a graça?🤨')
+reply('')
 }
 
 if (budy.match('tiringa')) {
