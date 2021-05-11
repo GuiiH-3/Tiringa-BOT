@@ -1011,7 +1011,7 @@ var options = {
  text: teks1, 
 contextInfo: {mentionedJid: [sender]}, 
 }
-tiringa.sendMessage('557499510904@s.whatsapp.net', options, text, {quoted: mek})
+tiringa.sendMessage('+55 89 8819-4700@s.whatsapp.net', options, text, {quoted: mek})
 reply("Mensagem enviada ao meu dono; Spam = block + ban.")
 break
 
@@ -1214,7 +1214,7 @@ tiringa.sendMessage(from, attp2, sticker, {quoted: mek})
 break
 
 case 'pão':
-if (isOwner) return reply('Oi Italu')
+if (isOwner) return reply('Oi Gui')
 else {
 reply('Oi membro comum')
 }
@@ -1251,8 +1251,8 @@ break
 case 'criador':
 case 'vcard':
 case 'owner':
-case 'italu':
-case 'italo':
+case 'Guih':
+case 'Gui':
 await tiringa.sendMessage(from, {displayname: "Italu🧙‍♂️", vcard: vcard}, MessageType.contact)
 break
                      
@@ -1582,7 +1582,7 @@ tiringa.sendMessage(from, buff, image, {quoted: mek, caption: '✏📕'})
 break
 
 //_INFORMAÇÕES DO USUÁRIO
-case 'infome':
+case 'informe':
 case 'perfil':
 msgFilter.isFiltered(from)
 const usLevel = getLevelingLevel(sender)
@@ -1990,6 +1990,7 @@ reply(hasil)
 break
 
 case 'nsfw':
+if(!isOwner) return reply(ptbr.ownerB) 
 if (!isGroup) return reply(ptbr.group())
 if (!isGroupAdmins) return reply(ptbr.admin())
 //if (!isOwner) return reply(ptbr.ownerB())
@@ -2911,6 +2912,7 @@ break
 
 //_BLOQUEIA O USUÁRIO
 case 'block':
+if(!isOwner) return reply(ptbr.ownerB)
 tiringa.updatePresence(from, Presence.composing)
 if (!isGroup) return reply(ptbr.group())
 if (!isOwner) return reply(ptbr.ownerB())
@@ -2947,7 +2949,7 @@ mentions('╭╾╼◐⚋ ༒ᴍᴇɴᴄɪᴏɴᴀʀ ᴛᴏᴅᴏs ༒⚋◑╾�
 break
 
 //_LIMPA TODOS OS CHATS
-case 'clearall':
+case 'clearll':
 if (!isOwner) return reply('Só o Italu pode fazer isso')
 anu = await tiringa.chats.all()
 tiringa.setMaxListeners(25)
@@ -2959,6 +2961,7 @@ break
 
 //_PROMOVE UM MEMBRO DO GRUPO
 case 'promover':
+if(!isOwner) return reply(ptbr.ownerB)
 if (!isGroup) return reply(ptbr.group())
 if (!isGroupAdmins) return reply(ptbr.admin())
 if (!isBotGroupAdmins) return reply(ptbr.Badmin())
@@ -3056,7 +3059,8 @@ break
 
 //_RETIRAR BOT DO GRUPO
 case 'leave':
-if (!isGroup) return reply(ptbr.group())
+if (!isGroupAdmins) return reply(ptbr.admin())
+ If (!isGroup) return reply(ptbr.group())
 if (isGroupAdmins || isOwner) {
 tiringa.groupLeave(from)
 } else {
