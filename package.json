@@ -1,7 +1,7 @@
 {
-  "name": "Tiringa-BOT",
+  "name": "Elisabeth-BOT",
   "version": "0.13.0",
-  "description": "Dono: Italu. Base original por: MhankBarBar",
+  "description": "Dono: GuiH. Base original por: MhankBarBar",
   "main": "index.js",
   "directories": {
     "lib": "lib"
