@@ -1,7 +1,7 @@
 /*Olá usuário..
 Este bot foi criado para o uso sem fins lucrativos
-Criador: Italu
-Colaboradores: Resen e Toin
+Criador: Guihh
+Colaborador: Italu 
 */
 
 //_API WHATSAPP WEB
@@ -72,8 +72,8 @@ const blocked = []
 //_VCARD DONO DO BOT
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Italu🧙‍♂️\n' 
-            + 'ORG:Dono do Tiringa;\n' 
+            + 'FN:Guihh🧙‍♂️\n' 
+            + 'ORG:Dono da Elisabeth;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=557499510904:+55 (74) 9951-0904\n' 
             + 'END:VCARD'
 
@@ -675,7 +675,7 @@ var patt = 'Bronze I🥉'
 if (nivelAtual === 1) {patt = 'Bronze  I🥉' } else if (nivelAtual === 2) {patt = 'Bronze II🥉'} else if (nivelAtual === 3) {patt = 'Bronze  III🥉'} else if (nivelAtual === 4) {patt = 'Bronze  IV🥉'} else if (nivelAtual === 5) {patt = 'Bronze  V🥉'} else if (nivelAtual === 6) {patt = 'Prata I🥈'} else if (nivelAtual === 7) {patt = 'Prata II🥈'} else if (nivelAtual === 8) {patt = 'Prata III🥈'} else if (nivelAtual === 9) {patt = 'Prata IV🥈'} else if (nivelAtual === 10) {patt = 'Prata V🥈'} else if (nivelAtual === 11) {patt = 'Ouro I🥇'} else if (nivelAtual === 12) {patt = 'Ouro II🥇'} else if (nivelAtual === 13) {patt = 'Ouro III🥇'} else if (nivelAtual === 14) {patt = 'Ouro IV🥇'} else if (nivelAtual === 15) {patt = 'Ouro V🥇'} else if (nivelAtual === 16) {patt = 'Campeão I🏆'} else if (nivelAtual === 17) {patt = 'Campeão II🏆'} else if (nivelAtual === 18) {patt = 'Campeão III🏆'} else if (nivelAtual === 19) {patt = 'Campeão IV🏆'} else if (nivelAtual === 20) {patt = 'Campeão V🏆'} else if (nivelAtual === 21) {patt = 'Diamante I 💎'} else if (nivelAtual === 22) {patt = 'Diamante II 💎'} else if (nivelAtual === 23) {patt = 'Diamante III 💎'} else if (nivelAtual === 24) {patt = 'Diamante IV 💎'} else if (nivelAtual === 25) {patt = 'Diamante V 💎'} else if (nivelAtual === 26) {patt = 'Mestre I 🐂'} else if (nivelAtual === 27) {patt = 'Mestre II 🐂'} else if (nivelAtual === 28) {patt = 'Mestre III 🐂'} else if (nivelAtual === 29) {patt = 'Mestre IV 🐂'} else if (nivelAtual === 30) {patt = 'Mestre V 🐂'} else if (nivelAtual === 31) {patt = 'Mítico I 🔮'} else if (nivelAtual === 32) {patt = 'Mítico II 🔮'} else if (nivelAtual === 33) {patt = 'Mítico III 🔮'} else if (nivelAtual === 34) {patt = 'Mítico IV 🔮'} else if (nivelAtual === 35) {patt = 'Mítico V 🔮'} else if (nivelAtual === 36) {patt = 'God I🕴'} else if (nivelAtual === 37) {patt = 'God II🕴'} else if (nivelAtual === 38) {patt = 'God III🕴'} else if (nivelAtual === 39) {patt = 'God IV🕴'} else if (nivelAtual === 40) {patt = 'God V🕴'} else if (nivelAtual > 41) {patt = '🛐Grande Mestre🛐'}
           
 //_TIPO DE USUÁRIO
-if (groupAdmins) {prema = 'Ademir🤓'}if (isPremium) {prema = 'Premium😎'} if (isOwner) {prema = 'El Italu🕴🏽'} if (isUser) {prema = 'Registrado 🥳'} else {var prema = 'Membro comum🗿'}
+if (groupAdmins) {prema = 'Ademir🤓'}if (isPremium) {prema = 'Premium😎'} if (isOwner) {prema = 'El Guihh🕴🏽'} if (isUser) {prema = 'Registrado 🥳'} else {var prema = 'Membro comum🗿'}
 
 //_XP COM LEVELING ATIVO
 if (isGroup && isLevelingOn) {
