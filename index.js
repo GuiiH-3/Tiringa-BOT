@@ -1,7 +1,7 @@
 /*Olá usuário..
 Este bot foi criado para o uso sem fins lucrativos
 Criador: italu
-Colaborador:
+Colaborador: Resen e toin 
 */
 
 //_API WHATSAPP WEB
@@ -72,10 +72,9 @@ const blocked = []
 //_VCARD DONO DO BOT
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Guihh🧙‍♂️\n' 
-            + 'ORG:Dono da Elisabeth;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=55 89 8819-4700+
-1 (606) 373-5809\n' 
+            + 'FN:Guinh🧙‍♂️\n' 
+            + 'ORG:Dono do Tiringa;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=55 89 8819-4700+:1 (606) 373-5809\n' 
             + 'END:VCARD'
 
 //_TIC-TAC-TOE By: Resen
@@ -808,11 +807,11 @@ tiringa.sendMessage(from, buf, audio, {mimetype: 'audio/mp4', quoted: mek, ptt: 
 }
 if ((budy === "fdp") || (budy === "Fdp") || (budy === "FDP")) {
 tiringa.updatePresence(from, Presence.composing)
-reply("se eu fosse filho da puta minha mãe taria com a sua na esquina.")
+reply("se eu fosse filho da puta minha mãe seria a msma da tua.")
 }
 if ((budy === "oi bot") || (budy === "Oi bot")) {
 tiringa.updatePresence(from, Presence.composing)
-reply("oii")
+reply("oii tudo bem? ")
 }
 if ((budy === "vtnc") || (budy === "Vtnc")) {
 tiringa.updatePresence(from, Presence.composing)
