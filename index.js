@@ -1,7 +1,7 @@
 /*Olá usuário..
 Este bot foi criado para o uso sem fins lucrativos
-Criador: Guihh
-Colaborador: Italu 
+Criador: italu
+Colaborador:
 */
 
 //_API WHATSAPP WEB
