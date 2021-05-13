@@ -811,7 +811,7 @@ reply("se eu fosse filho da puta minha mãe seria a msma da tua.")
 }
 if ((budy === "oi bot") || (budy === "Oi bot")) {
 tiringa.updatePresence(from, Presence.composing)
-reply("oii tudo bem? ")
+reply("oi tudo bem? ")
 }
 if ((budy === "vtnc") || (budy === "Vtnc")) {
 tiringa.updatePresence(from, Presence.composing)
@@ -828,7 +828,6 @@ reply(`você falou em coito?KKKKKKKKKKKKKKKKKKKKKKKKK`)
 if (budy === "pnc") {
 tiringa.updatePresence(from, Presence.composing)
 reply(`pnc é pato todo pato é viado e olha lá aquele teu rabo todo arrombado fdm ${pushname}`)
-
 }
 if ((budy === " Bom dia") || (budy === "Cleito")) {
 cleitu = fs.readFileSync(`./src/edmi.webp`)
@@ -837,15 +836,19 @@ tiringa.sendMessage(from,bom dia, sticker, {quoted: mek})
 if ((budy === "edmilson") || (budy === "edmilson")) {= fs.readFileSync(`./src/onichan.mp3`)
 tiringa.sendMessage(from, buf, audio, {mimetype: 'audio/mp4', quoted: mek, ptt: true})
 }
+if (budy.match(`@+55 89 8819-4700`)) {
+reply('Esse baiano deve estar dormindo...')
+}
+if (budy.match(`bom dia`)) {
+reply('STK-20210428-WA0456.webp')
 }
 if ((budy.includes('kkkkkkkkkkk')) || (budy.includes('KKKKKKKKKK'))) {
 reply('')
 }
-if(body == "porno") {reply('AUD-20210512-WA0606.m4a')
+if(budy == "porno") {reply('AUD-20210512-WA0606.m4a')
 }
 if (budy.match(`@+1 (606) 373-5809`)) {
-reply('teste')
-}
+reply('STK-20210428-WA0080.webp')
 }
 if (budy.match('tiringa')) {
 result = fs.readFileSync(`./src/mask.webp`)
@@ -858,7 +861,7 @@ result = fs.readFileSync(`./src/mask.webp`)
 tiringa.sendMessage(from, result, sticker, {quoted: mek })
 }
 
-switch(testat) {
+switch(mz24) {
 //_ COMANDOS Z24
 case 'lia':
 case 'Lia':
@@ -1995,6 +1998,7 @@ reply(hasil)
 break
 
 case 'nsfw':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if(!isOwner) return reply(ptbr.ownerB) 
 if (!isGroup) return reply(ptbr.group())
 if (!isGroupAdmins) return reply(ptbr.admin())
@@ -2015,6 +2019,7 @@ reply(`Digite ${prefix}nsfw 1 para ativar, 0 para desativar o recurso`)
 break
                    
 case 'leveis':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if (!isGroup) return reply(ptbr.group())
 if (!isGroupAdmins) return reply(ptbr.admin())
 if (args.length < 1) return reply(`Digite da forma correta:\nComando: ${prefix}leveis 1, para ativar e 0 para desativar`)
@@ -2917,6 +2922,7 @@ break
 
 //_BLOQUEIA O USUÁRIO
 case 'block':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if(!isOwner) return reply(ptbr.ownerB)
 tiringa.updatePresence(from, Presence.composing)
 if (!isGroup) return reply(ptbr.group())
@@ -2971,6 +2977,7 @@ if (!isGroup) return reply(ptbr.group())
 if (!isGroupAdmins) return reply(ptbr.admin())
 if (!isBotGroupAdmins) return reply(ptbr.Badmin())
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
 pro = 'Berhasil Promote\n'
@@ -3064,6 +3071,7 @@ break
 
 //_RETIRAR BOT DO GRUPO
 case 'leave':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if (!isGroupAdmins) return reply(ptbr.admin())
  If (!isGroup) return reply(ptbr.group())
 if (isGroupAdmins || isOwner) {
@@ -3377,7 +3385,7 @@ const slott =
 ║                                           
 ║          [💰SLOT💰 | 777 ]        
 ╚════ ≪ •❈• ≫ ════╝
-                      @ɪᴛᴀʟᴜ
+                      @Guihh
 
 ${vitr}`
 if (vitr == "Você ganhou!!!") {
