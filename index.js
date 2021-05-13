@@ -825,8 +825,7 @@ if ((budy.match("sexo")) || (budy.match("Sexo"))) {
 tiringa.updatePresence(from, Presence.composing)
 reply(`você falou em coito?KKKKKKKKKKKKKKKKKKKKKKKKK`)
 }
-if (budy === "pnc") {
-tiringa.updatePresence(from, Presence.composing)
+if (budy === "pnc") {tiringa.updatePresence(from, Presence.composing)
 reply(`pnc é pato todo pato é viado e olha lá aquele teu rabo todo arrombado fdm ${pushname}`)
 }
 if ((budy === " Bom dia") || (budy === "Cleito")) {
@@ -836,7 +835,7 @@ tiringa.sendMessage(from,bom dia, sticker, {quoted: mek})
 if ((budy === "edmilson") || (budy === "edmilson")) {= fs.readFileSync(`./src/onichan.mp3`)
 tiringa.sendMessage(from, buf, audio, {mimetype: 'audio/mp4', quoted: mek, ptt: true})
 }
-if (budy.match(`@+55 (89)8819-4700`)) {
+if (budy.match(`@+55(89)8819-4700`)) {
 reply('Esse baiano deve estar dormindo...')
 }
 if (budy.match(`bom dia`)) {
