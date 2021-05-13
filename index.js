@@ -836,18 +836,18 @@ tiringa.sendMessage(from,bom dia, sticker, {quoted: mek})
 if ((budy === "edmilson") || (budy === "edmilson")) {= fs.readFileSync(`./src/onichan.mp3`)
 tiringa.sendMessage(from, buf, audio, {mimetype: 'audio/mp4', quoted: mek, ptt: true})
 }
-if (budy.match(`@+55 89 8819-4700`)) {
+if (budy.match(`@+55 (89)8819-4700`)) {
 reply('Esse baiano deve estar dormindo...')
 }
 if (budy.match(`bom dia`)) {
 reply('STK-20210428-WA0456.webp')
 }
 if ((budy.includes('kkkkkkkkkkk')) || (budy.includes('KKKKKKKKKK'))) {
-reply('')
+reply('kk')
 }
 if(budy == "porno") {reply('AUD-20210512-WA0606.m4a')
 }
-if (budy.match(`@+1 (606) 373-5809`)) {
+if (budy.match(`@+1(606)373-5809`)) {
 reply('STK-20210428-WA0080.webp')
 }
 if (budy.match('tiringa')) {
@@ -967,9 +967,8 @@ if (!isNsfw) return reply(ptbr.nsfw())
 costum(m18(pushname, prefix), text, tescuk, crh)
 break
 
-//_TESTES
 case 'mz24':
-if (!isZ24) return reply('Comando exclusivo z24')
+if (!mZ24) return reply('Comando exclusivo z24')
 tiringa.sendMessage(from, mz(prefix), text, tescuk, cr)
 break
 
@@ -1141,6 +1140,7 @@ reply("O tempo acabou")
 break
 
 case 'addprem':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if (!isGroup) return reply(ptbr.group())
 if (!isOwner) return  reply(ptbr.ownerB())
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
@@ -1156,6 +1156,7 @@ mentions(`${susp}`, mentioned, true)
 break
 
 case 'dellprem':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if (!isGroup) return reply(ptbr.group())
 if (!isOwner) return  reply(ptbr.ownerB())
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
@@ -1172,6 +1173,7 @@ mentions(`${susp}`, mentioned, true)
 break
 
 case 'ban':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if (!isGroup) return reply(ptbr.group())
 if (!isOwner) return  reply(ptbr.ownerB())
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
@@ -1187,6 +1189,7 @@ mentions(`${susp}`, mentioned, true)
 break
 
 case 'unban':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if (!isGroup) return reply(ptbr.group())
 if (!isOwner) return  reply(ptbr.ownerB())
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
@@ -1222,7 +1225,7 @@ tiringa.sendMessage(from, attp2, sticker, {quoted: mek})
 break
 
 case 'pão':
-if (isOwner) return reply('Oi Gui')
+if (isOwner) return reply('Oi Gui gostoso')
 else {
 reply('Oi membro comum')
 }
@@ -1380,6 +1383,7 @@ break
 //_CONTADOR DE LETRAS
 case 'contar':
 msgFilter.isFiltered(from)
+tiringa.sendMessage(from, tt, texto, {quoted: mek})
 if (args.length == 0) return reply( '0 caracteres, pois obviamente não há texto😀')
 const count = body.slice(8).length
 if (count === 1) {
@@ -1430,7 +1434,7 @@ Url Apk : ${i.url}
 𝗣𝗹𝗮𝘆 𝘀𝘁𝗼𝗿𝗲
 `
 }
-reply(teks.trim())
+reply(teks.trim()) 
 break
 
 case 'searchsticker': 
@@ -1791,7 +1795,7 @@ uptime = process.uptime()
 inf =
  `‣ Nome do bot: ${me.name}
   ‣ Número do bot: @${me.jid.split('@')[0]}
-  ‣ Dono: Italu
+  ‣ Dono: Guih
   ‣ Prefix: ${prefix}
   ‣ O bot está ativo há: ${temporizador(uptime)}
   ‣ Total de usuários: ${_registered.length} usuários
@@ -2972,6 +2976,7 @@ break
 
 //_PROMOVE UM MEMBRO DO GRUPO
 case 'promover':
+if(isOwner) return reply(ptbr.ownerB(ownerName))
 if(!isOwner) return reply(ptbr.ownerB)
 if (!isGroup) return reply(ptbr.group())
 if (!isGroupAdmins) return reply(ptbr.admin())
