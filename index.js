@@ -74,7 +74,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Guinh🧙‍♂️\n' 
             + 'ORG:Dono do Tiringa;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=55 89 8819-4700+:1 (606) 373-5809\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=55 89 8819-4700:+1 (606) 373-5809\n' 
             + 'END:VCARD'
 
 //_TIC-TAC-TOE By: Resen
