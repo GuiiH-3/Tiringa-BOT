@@ -1383,7 +1383,6 @@ break
 //_CONTADOR DE LETRAS
 case 'contar':
 msgFilter.isFiltered(from)
-tiringa.sendMessage(from, tt, texto, {quoted: mek})
 if (args.length == 0) return reply( '0 caracteres, pois obviamente não há texto😀')
 const count = body.slice(8).length
 if (count === 1) {
@@ -1391,6 +1390,7 @@ reply(`O texto possui ${count} caractere.`)
 } else if (count > 1) {
 reply(`O texto possui ${count} caracteres.`)
 }
+reply(teks.trim())
 break
 
 case 'igstory': 
