@@ -844,11 +844,13 @@ reply('STK-20210428-WA0456.webp')
 if ((budy.includes('kkkkkkkkkkk')) || (budy.includes('KKKKKKKKKK'))) {
 reply('kk')
 }
-if(budy == "porno") {reply('AUD-20210512-WA0606.m4a')
+if(budy == "porno") {
+reply('AUD-20210512-WA0606.m4a')
 }
 if (budy.match(`@+1(606)373-5809`)) {
 reply('STK-20210428-WA0080.webp')
 }
+
 if (budy.match('tiringa')) {
 result = fs.readFileSync(`./src/mask.webp`)
 tiringa.sendMessage(from, result, sticker, {quoted: mek })
@@ -1030,7 +1032,7 @@ var options = {
 text: teks1,
 contextInfo: {mentionedJid: [sender]},
 }
-tiringa.sendMessage('557499510904@s.whatsapp.net', options, text, {quoted: mek})
+tiringa.sendMessage('+1 606 373-5809@s.whatsapp.net', options, text, {quoted: mek})
 reply("Mensagem enviada ao meu dono; Spam = block + ban.")
 break
 
@@ -1263,7 +1265,7 @@ case 'vcard':
 case 'owner':
 case 'Guih':
 case 'Gui':
-await tiringa.sendMessage(from, {displayname: "Italu🧙‍♂️", vcard: vcard}, MessageType.contact)
+await tiringa.sendMessage(from, {displayname: "Guih🧙‍♂️", vcard: vcard}, MessageType.contact)
 break
                      
 case 'ownergrup':
@@ -1389,7 +1391,6 @@ reply(`O texto possui ${count} caractere.`)
 } else if (count > 1) {
 reply(`O texto possui ${count} caracteres.`)
 }
-reply(teks.trim())
 break
 
 case 'igstory': 
