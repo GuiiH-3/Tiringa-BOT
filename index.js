@@ -828,6 +828,7 @@ reply(`você falou em coito?KKKKKKKKKKKKKKKKKKKKKKKKK`)
 if (budy === "pnc") {
 tiringa.updatePresence(from, Presence.composing)
 reply(`pnc é pato todo pato é viado e olha lá aquele teu rabo todo arrombado fdm ${pushname}`)
+
 }
 if ((budy === " Bom dia") || (budy === "Cleito")) {
 cleitu = fs.readFileSync(`./src/edmi.webp`)
@@ -840,7 +841,12 @@ tiringa.sendMessage(from, buf, audio, {mimetype: 'audio/mp4', quoted: mek, ptt: 
 if ((budy.includes('kkkkkkkkkkk')) || (budy.includes('KKKKKKKKKK'))) {
 reply('')
 }
-
+if(body == "porno") {reply('AUD-20210512-WA0606.m4a')
+}
+if (budy.match(`@+1 (606) 373-5809`)) {
+reply('teste')
+}
+}
 if (budy.match('tiringa')) {
 result = fs.readFileSync(`./src/mask.webp`)
 tiringa.sendMessage(from, result, sticker, {quoted: mek })
